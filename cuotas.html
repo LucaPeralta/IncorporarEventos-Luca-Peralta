@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUOTA MENSUAL COLEGIO</title>
+</head>
+<body>
+    <div>
+    <h1>Adjunta el monto.</h1>
+    </div>
+    <div>
+        <fieldset>
+            <h1>CUOTA MENSUAL</h1>
+            <form>
+                <div>
+                    <label for="capital">CAPITAL
+                        <input type="text" placeholder="Ingrese el capital prestado" id="capital">
+                    </label>
+                </div>
+                <div>
+                    <label for="couta">CUOTAS 
+                        <input type="text" placeholder="Ingrese las cuotas del prestamo" id="cuota">
+                    </label>
+                </div>
+                <div>
+                    <label for="interes">INTERESES X DIAS ATRASADOS
+                        <input type="text" placeholder="Ingrese el interés a generar" id="intereses">
+                    </label>
+                </div>
+            </form>
+        <button onclick="gen_table();">CALCULAR</button>
+        <button id="refresh">BORRAR</button>
+        </fieldset>
+        <hr>
+        <table class="tab">
+            <thead>
+                <tr>
+                    <td>NRO</td>
+                    <td>CAPITAL</td>
+                    <td>INTERESES</td>
+                    <td>TOTAL A PAGAR</td>
+                </tr>
+            </thead>
+            <tbody id="tab">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
