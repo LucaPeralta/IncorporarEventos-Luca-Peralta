@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CUOTA MENSUAL COLEGIO</title>
 </head>
+
 <body>
     <div>
-    <h1>Adjunta el monto.</h1>
+        <h1>Adjunta el monto.</h1>
     </div>
     <div>
         <fieldset>
@@ -20,7 +23,7 @@
                     </label>
                 </div>
                 <div>
-                    <label for="couta">CUOTAS 
+                    <label for="couta">CUOTAS
                         <input type="text" placeholder="Ingrese las cuotas del prestamo" id="cuota">
                     </label>
                 </div>
@@ -30,8 +33,8 @@
                     </label>
                 </div>
             </form>
-        <button onclick="gen_table();">CALCULAR</button>
-        <button id="refresh">BORRAR</button>
+            <button onclick="gen_table();">CALCULAR</button>
+            <button id="refresh">BORRAR</button>
         </fieldset>
         <hr>
         <table class="tab">
@@ -58,4 +61,5 @@
     </div>
     <script src="./js/cuotas.js"></script>
 </body>
+
 </html>
